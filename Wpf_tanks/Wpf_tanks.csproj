@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="brik.jpg" />
+    <None Remove="Images\Enemy.png" />
+    <None Remove="MyTank.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\brik.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Enemy.png" />
+    <Resource Include="Images\MyTank.png" />
+  </ItemGroup>
+
+</Project>
